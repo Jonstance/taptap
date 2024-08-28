@@ -169,7 +169,7 @@ function Tasks() {
   };
 
   return (
-    <GameLayout>
+    <>
       {isLoading ? (
         <LoadingScreen isloaded={isLoading} reURL={''} />
       ) : (
@@ -207,7 +207,7 @@ function Tasks() {
           ))}
         </>
       )}
-    </GameLayout>
+    </>
   );
 }
 
