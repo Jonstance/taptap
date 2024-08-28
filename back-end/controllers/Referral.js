@@ -105,7 +105,7 @@ async function claim(req, res, next) {
             return res.status(404).json({ error: 'Not Found', message: 'User not found or not eligible for claim' });
         }
 
-        const referral_score = userDetails.tg_premium_user === "Y" ? 5000 : 2500;
+        const referral_score = userDetails.tg_premium_user === "Y" ? 1000 : 500;
 
         // Update earnings
         const earnUpdate = {
@@ -174,7 +174,7 @@ async function claimAll(req, res, next) {
         let totalReferralScore = 0;
 
         unclaimedUsers.forEach(user => {
-            const referralScore = user.tg_premium_user === "Y" ? parseInt(process.env.PREMIUM) : parseInt(process.env.NON_PREMIUM);
+            const referralScore = user.tg_premium_user === "Y" ? 1000 : 500;
             totalReferralScore += referralScore;
         });
 
