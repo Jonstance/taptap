@@ -29,11 +29,11 @@ const getCurrentDateFormatted = () => {
 
 const getRequiredScore = (minerLevel) => {
     const scoreMap = {
-        1: [20000, '20k'],
-        2: [100000, '100k'],
-        3: [200000, '200k'],
-        4: [500000, '500k'],
-        5: [1000000, '1M']
+        1: [3000, '3k'],
+        2: [6000, '6k'],
+        3: [10000, '10k'],
+        4: [12000, '12k'],
+        5: [18000, '1k']
     };
     const [score, scoreText] = scoreMap[minerLevel] || [0, 'unknown'];
     if (score === 0) {

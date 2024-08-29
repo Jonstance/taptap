@@ -124,15 +124,15 @@ function RoboMine() {
 
   function getRequiredScore(miner_level) {
     if (miner_level === 1) {
-      return [20000, "20k"];
+      return [3000, "3k"];
     } else if (miner_level === 2) {
-      return [100000, "100k"];
+      return [6000, "6k"];
     } else if (miner_level === 3) {
-      return [200000, "200k"];
+      return [10000, "10k"];
     } else if (miner_level === 4) {
-      return [500000, "500k"];
+      return [12000, "12k"];
     } else if (miner_level === 5) {
-      return [1000000, "1M"];
+      return [18000, "18k"];
     } else {
       throw new Error(
           `miner_level not found for getRequiredScore(${miner_level})`
