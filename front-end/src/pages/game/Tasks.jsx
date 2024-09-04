@@ -167,6 +167,16 @@ function Tasks() {
       return value;
     }
   };
+  useEffect(() => {
+    const tg = window.Telegram.WebApp;
+    tg.expand();
+
+    tg.BackButton.show();
+    tg.BackButton.onClick(() => {
+      navigate(-1);
+      tg.BackButton.hide();
+    });
+  });
 
   return (
     <>
