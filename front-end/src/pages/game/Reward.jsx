@@ -360,7 +360,7 @@ function RoboMine() {
                       onClick={handleUpgrade}
                       className="claim bg-[#0f85f3] flex flex-row items-center justify-center gap-2 px-6 py-4 mt-2 rounded-2xl text-xl font-bold "
                   >
-                    Unlock 20k
+                    Unlock
                   </button>
               )}
               {miner_level > 0 && is_claim && (
