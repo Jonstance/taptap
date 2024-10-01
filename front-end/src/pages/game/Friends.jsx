@@ -190,13 +190,13 @@ const Friends = () => {
 
         <InviteCard
           title="Invite friend"
-          points="+500 SNOW"
+          points="+500 SDEXp"
           description="for you and your friend"
           logo={LogoImg}
         />
         <InviteCard
           title="Invite friend with Telegram Premium"
-          points="+1000 SNOW"
+          points="+1000 SDEXp"
           description="for you and your friend"
           logo={LogoImg}
         />
